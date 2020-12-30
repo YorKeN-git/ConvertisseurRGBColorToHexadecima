@@ -15,23 +15,17 @@ public class ConvertisseurRGBToHexa {
         String R = Integer.toHexString(r).toUpperCase();
         String G = Integer.toHexString(g).toUpperCase();
         String B = Integer.toHexString(b).toUpperCase();
-        if(R.equals("0")) {
-        	R = "00";
-        }else if(r < 10) {
+        if(r < 10) {
         	R = "0" + R;
         }
-        if(G.equals("0")) {
-        	G = "00";
-        }else if(g < 10) {
+        if(g < 10) {
         	G = "0" + G;
         }
-        if(B.equals("0")) {
-        	B = "00";
-        }else if(b < 10) {
+        if(b < 10) {
         	B = "0" + B;
         }
         String hexaColor = "#"+R+G+B;
-        System.out.println("("+ r + ", " + g + ", " + b + ") = " + hexaColor + " en Hexadécimal");
+        System.out.println("("+ r + ", " + g + ", " + b + ") = " + hexaColor + " en HexadÃ©cimal");
 	}
 
 }
